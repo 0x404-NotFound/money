@@ -1,0 +1,125 @@
+{
+  "simulation": {
+    "initialPopulation": 20,
+    "timeStepDelay": 2000,
+    "autoSaveInterval": 100,
+    "maxMemoriesPerPerson": 20,
+    "maxEvents": 50
+  },
+  "ai": {
+    "model": "deepseek-r1:1.5b",
+    "ollamaUrl": "http://localhost:11434",
+    "fallbackToRandom": true,
+    "requestTimeout": 10000
+  },
+  "economy": {
+    "initialInflation": 2.5,
+    "wealthMultipliers": {
+      "Bác sĩ": 2.5,
+      "Kỹ sư": 2.0,
+      "Quản lý": 2.2,
+      "Thương gia": 3.0,
+      "Giáo viên": 1.2,
+      "Nông dân": 0.8,
+      "Thợ may": 0.9,
+      "Học sinh": 0.1,
+      "Sinh viên": 0.3
+    }
+  },
+  "world": {
+    "seasonLength": 90,
+    "dailyEnergyRegeneration": 30,
+    "socialEventProbability": 0.3,
+    "locations": [
+      {
+        "name": "Trung tâm thành phố",
+        "type": "public",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "name": "Khu dân cư A",
+        "type": "home",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "name": "Khu dân cư B",
+        "type": "home",
+        "x": -1,
+        "y": 0
+      },
+      {
+        "name": "Khu công nghiệp",
+        "type": "work",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "name": "Chợ trung tâm",
+        "type": "commercial",
+        "x": 0,
+        "y": -1
+      },
+      {
+        "name": "Trường học",
+        "type": "public",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "name": "Bệnh viện",
+        "type": "public",
+        "x": -2,
+        "y": 0
+      },
+      {
+        "name": "Công viên",
+        "type": "public",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "name": "Quán cà phê",
+        "type": "commercial",
+        "x": -1,
+        "y": -1
+      },
+      {
+        "name": "Nhà thờ",
+        "type": "public",
+        "x": 2,
+        "y": 1
+      }
+    ]
+  },
+  "actions": [
+    "Làm việc",
+    "Nghỉ ngơi",
+    "Ăn uống",
+    "Giao tiếp với người khác",
+    "Học tập",
+    "Tập thể dục",
+    "Đi mua sắm",
+    "Chơi game",
+    "Đọc sách",
+    "Nấu ăn",
+    "Dọn dẹp nhà cửa",
+    "Đi dạo",
+    "Thăm bạn bè",
+    "Hẹn hò",
+    "Tham gia sự kiện cộng đồng",
+    "Khởi nghiệp",
+    "Đầu tư",
+    "Giúp đỡ người khác",
+    "Sáng tạo nghệ thuật",
+    "Du lịch"
+  ],
+  "logging": {
+    "level": "info",
+    "showPersonActions": true,
+    "showEvents": true,
+    "showStats": true,
+    "statsInterval": 4
+  }
+}
